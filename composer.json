@@ -1,0 +1,23 @@
+{
+  "name": "local/tar-app",
+  "description": "Travel Authorization Request Laravel App - local skeleton",
+  "type": "project",
+  "require": {
+    "php": "^8.0",
+    "laravel/framework": "^10.0",
+    "barryvdh/laravel-dompdf": "^2.0"
+  },
+  "require-dev": {
+    "laravel/breeze": "^1.18"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ]
+  }
+}
